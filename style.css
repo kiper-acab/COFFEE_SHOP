@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body > * {
+  width: 1400px;
+  padding: 0 100px;
+}
+
+#start_page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  max-height: 1080px;
+}
+#start_page .background {
+  position: absolute;
+  height: 100vh;
+  max-height: 1080px;
+  width: 800px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-image: url("Images/background.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+#start_page .before_bg {
+  position: absolute;
+  height: 100vh;
+  max-height: 1080px;
+  width: calc(50% - 100px);
+  height: 100vh;
+  right: 0%;
+  background-color: rgb(65, 81, 103);
+  z-index: -2;
+}
+#start_page header {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#start_page header img {
+  height: 50px;
+}
+#start_page header a {
+  text-decoration: none;
+  color: gray;
+}
+#start_page nav {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+#start_page nav a {
+  text-decoration: none;
+  color: white;
+}
+#start_page nav a:not(#start_page nav a:last-child) {
+  margin-bottom: 20px;
+}
+#start_page nav a:first-child {
+  margin-bottom: 100px !important;
+}
+#start_page h1 {
+  color: rgb(65, 81, 103);
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  padding: 2px 7px;
+}
+#start_page h1 .brown {
+  background-color: #c7a17a;
+  color: white;
+  margin-left: -7px;
+  padding: 0 7px;
+}
+
+#your_base {
+  text-align: center;
+  margin: 50px 0;
+}
+#your_base h4 {
+  font-size: 16px;
+}
+#your_base h2 {
+  font-size: 36px;
+  color: rgb(65, 81, 103);
+}
+#your_base section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+#your_base section h3 {
+  margin-bottom: 20px;
+}
+#your_base section i {
+  font-size: 70px;
+  color: #c7a17a;
+  margin-bottom: 30px;
+}
+
+#choose {
+  margin-top: 150px;
+  text-align: center;
+}
+#choose h4 {
+  font-size: 16px;
+}
+#choose h2 {
+  font-size: 36px;
+  color: rgb(65, 81, 103);
+}
+#choose section {
+  box-shadow: 18px -1px 55px -7px rgba(0, 0, 0, 0.75);
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#choose section article {
+  margin-top: 50px;
+  display: flex;
+}
+#choose section article article {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+#choose section article article p {
+  color: #c7a17a;
+}
+#choose section article article h6 {
+  margin-top: 30px;
+}
+#choose section article article article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#choose section article article article a {
+  text-decoration: none;
+  padding: 0 5px;
+  margin-left: 30px;
+}
+#choose section article article article a:first-child {
+  background-color: #c7a17a;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+#choose section article article article a:last-child {
+  color: rgb(65, 81, 103);
+  margin-top: 5px;
+}
+
+#giftset {
+  margin-top: 150px;
+}
+#giftset form {
+  text-align: center;
+}
+#giftset h4 {
+  font-size: 16px;
+}
+#giftset h2 {
+  color: rgb(65, 81, 103);
+  margin-top: 15px;
+  font-size: 36px;
+}
+#giftset section {
+  position: relative;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#giftset section img {
+  position: absolute;
+  margin-left: 170px;
+}
+#giftset section article h2 {
+  color: #c7a17a;
+  font-size: 16px;
+}
+#giftset section article a {
+  text-decoration: none;
+}
+#giftset section article #yel {
+  margin-top: 20px;
+  background-color: #c7a17a;
+  color: white;
+  border-radius: 50px;
+  padding: 7px 10px;
+}
+#giftset section article #chi {
+  color: rgb(65, 81, 103);
+  padding-left: 135px;
+}
+#giftset section article article {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#giftset section article article article i {
+  font-size: 29px;
+  margin-right: 10px;
+}
+#giftset section article article article:last-child {
+  margin-left: 20px;
+}
+#giftset section article article article p b {
+  font-size: 14px;
+}
+
+#combo {
+  text-align: center;
+  margin-top: 150px;
+}
+#combo span {
+  color: #333;
+  width: 200px;
+  height: 200px;
+}
+#combo h4 {
+  font-size: 16px;
+}
+#combo h2 {
+  color: rgb(65, 81, 103);
+  margin-top: 15px;
+  font-size: 36px;
+}
+#combo section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+#combo section > article {
+  box-shadow: 18px -1px 55px -7px rgba(0, 0, 0, 0.75);
+}
+#combo section article {
+  margin: 0px 20px;
+  padding-bottom: 20px;
+}
+#combo section article h3 {
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+#combo section article h6 {
+  font-size: 10px;
+}
+#combo section article article {
+  display: flex;
+  justify-content: center;
+}
+#combo section article article p {
+  padding: 20px 20px;
+}
+#combo section article article p:nth-child(1) {
+  color: #c7a17a;
+  font-size: 20px;
+}
+#combo section article #sp a {
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+#combo section article #sp a:last-child {
+  color: rgb(65, 81, 103);
+}
+#combo section article #sp #man {
+  background-color: #c7a17a;
+  color: white;
+  border-radius: 50px;
+}/*# sourceMappingURL=style.css.map */

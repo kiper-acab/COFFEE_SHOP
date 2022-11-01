@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+
+html
+    display: flex
+    justify-content: center
+
+body
+    >*
+        width: 1400px
+        padding: 0 100px
+
+#start_page
+    display: flex
+    flex-direction: column
+    position: relative
+    height: 100vh
+    max-height: 1080px
+    .background
+        position: absolute
+        height: 100vh
+        max-height: 1080px
+        width: 800px
+        top: 0%
+        left: 50%
+        transform: translate(-50%, 0%)
+        background-image: url("Images/background.jpg")
+        background-size: cover
+        z-index: -1
+    .before_bg
+        position: absolute
+        height: 100vh
+        max-height: 1080px
+        width: calc( 50% - 100px )
+        height: 100vh
+        right: 0%
+        background-color: rgb(65, 81, 103)
+        z-index: -2
+
+    header
+        padding-top: 50px
+        display: flex
+        justify-content: space-between
+        img
+            height: 50px
+        a
+            text-decoration: none
+            color: gray
+    nav
+        display: flex
+        flex-direction: column
+        align-self: flex-end
+        a
+            text-decoration: none
+            color: white
+            &:not(&:last-child)
+                margin-bottom: 20px
+            &:first-child
+                margin-bottom: 100px !important
+    h1
+        color: rgb(65, 81, 103)
+        font-family: 'Montserrat', sans-serif
+        font-size: 48px
+        padding: 2px 7px
+        .brown
+            background-color: #c7a17a
+            color: white
+            margin-left: -7px
+            padding: 0 7px
+#your_base
+    text-align: center
+    margin: 50px 0
+    h4
+        font-size: 16px
+    h2
+        font-size: 36px
+        color: rgb(65, 81, 103)
+    section
+        margin-top: 100px
+        display: flex
+        justify-content: space-around
+        h3
+            margin-bottom: 20px
+        i
+            font-size: 70px
+            color: #c7a17a
+            margin-bottom: 30px
+#choose
+    margin-top: 150px
+    text-align: center
+    h4
+        font-size: 16px
+    h2
+        font-size: 36px
+        color: rgb(65, 81, 103)
+    section
+        -webkit-box-shadow: 18px -1px 55px -7px rgba(0,0,0,0.75)
+        -moz-box-shadow: 18px -1px 55px -7px rgba(0,0,0,0.75)
+        box-shadow: 18px -1px 55px -7px rgba(0,0,0,0.75)
+        margin-top: 100px
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+        article
+            margin-top: 50px
+            display: flex
+            article
+                margin-top: 50px
+                display: flex
+                flex-direction: column
+                p
+                    color: #c7a17a
+                h6
+                    margin-top: 30px
+                article
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-around
+                    a
+                        text-decoration: none
+                        padding: 0 5px
+                        margin-left: 30px
+                        &:first-child
+                            background-color: #c7a17a
+                            color: white
+                            border-radius: 20px
+                            padding: 5px 10px
+                        &:last-child
+                            color:   rgb(65, 81, 103)
+                            margin-top: 5px
+
+#giftset
+    
+    margin-top: 150px  
+    form
+        text-align: center
+    h4
+        font-size: 16px                        
+    h2
+        color:   rgb(65, 81, 103)
+        margin-top: 15px
+        font-size: 36px
+    section
+        position: relative
+        margin-top: 100px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        aside
+        img
+            position: absolute
+            margin-left: 170px        
+        article
+            h2
+                color: #c7a17a
+                font-size: 16px
+            a
+                
+                text-decoration: none
+            #yel
+                margin-top: 20px
+                background-color: #c7a17a
+                color: white
+                border-radius: 50px
+                padding: 7px 10px
+            #chi
+                color: rgb(65, 81, 103)
+                padding-left: 135px
+            article
+                display: flex
+                margin-top: 15px
+                margin-bottom: 20px
+                article
+                    i
+                        font-size: 29px
+                        margin-right: 10px  
+                    &:last-child
+                        margin-left: 20px
+                    p
+                        b
+                            font-size: 14px
+    
+#combo
+    text-align: center
+    margin-top: 150px  
+    span
+        color: #333
+        width: 200px
+        height: 200px
+    h4
+        font-size: 16px                        
+    h2
+        color:   rgb(65, 81, 103)
+        margin-top: 15px
+        font-size: 36px
+    section
+        margin-top: 100px
+        display: flex
+        justify-content: space-around
+        margin-bottom: 200px
+        >article
+            -webkit-box-shadow: 18px -1px 55px -7px rgba(0,0,0,0.75)
+            -moz-box-shadow: 18px -1px 55px -7px rgba(0,0,0,0.75)
+            box-shadow: 18px -1px 55px -7px rgba(0,0,0,0.75)
+        article
+            margin: 0px 20px
+            padding-bottom: 20px
+            h3
+                font-size: 23px
+                padding-bottom: 20px
+            h6
+                font-size: 10px
+            article
+                display: flex                  
+                justify-content: center
+                p
+                    padding: 20px 20px
+                    &:nth-child(1)
+                        color: #c7a17a
+                        font-size: 20px 
+            #sp
+                a
+                    text-decoration: none
+                    margin-top: 20px
+                    padding: 10px 30px
+                    font-size: 20px
+                    &:last-child
+                        color: rgb(65, 81, 103)          
+                #man
+                    background-color: #c7a17a
+                    color: white
+                    border-radius: 50px
+        
